@@ -79,11 +79,10 @@ The developed ML model, particularly the **tuned XGBoost model with 89.15% accur
     *   **Machine Learning**: Scikit-Learn (for model selection, preprocessing, metrics), XGBoost (for the high-performing model), NLTK (for text processing in 'description' column exploration, specifically `word_tokenize`, `stopwords`, `WordNetLemmatizer`, `string`).
     *   **Clustering**: KPrototypes (for missing values analysis).
     *   **Statistical Analysis**: Scipy.
-    *   **Warnings**: Warnings.
 
 ## Contributors
 
-*   Snehal Srivastava
+*   Snnehal Srivastava
 *   Rachit Jain
 *   Riya Mangal
 *   Dhruv
