@@ -20,6 +20,7 @@ The dataset used for this project was **scraped from Craigslist.org** and consis
 *   **Size**: Initially comprised **426,880 rows and 26 features**.
 *   **Features**: These include 14 categorical, 7 numerical, and 5 text data types. Prominent features include paint color, manufacturer, number of cylinders, and odometer readings.
 *   **Timeframe**: The data spans from 1900 to 2022, though considerable data for analysis begins from 1990 onwards.
+*   **Download**: https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
 
 ## Data Preprocessing & Exploratory Data Analysis (EDA)
 
