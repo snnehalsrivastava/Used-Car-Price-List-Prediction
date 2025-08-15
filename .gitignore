@@ -1,18 +1,70 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+# Python bytecode
+*.pyc
+__pycache__/
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Virtual environment
+.venv/
+env/
+venv/
+.env/
+/Anaconda/
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+# Jupyter Notebook files
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+# Optionally, if notebooks contain large outputs that shouldn't be tracked:
+# *.ipynb
+# (Be careful with this, as it ignores the notebook files themselves)
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+# Data files (raw, intermediate, and processed)
+# The raw dataset is quite large and can be sourced from Kaggle
+vehicles.csv
+vehicles_initialdatacleaning.csv
+vehicles_allclean_imputer.csv
+
+# Derived data/artifacts (if saved as files)
+# Example of potential output directories or files
+/data/processed/
+/models/
+/figures/
+/plots/
+*.pkl
+*.joblib
+*.csv # To ignore any other generated CSV files, use with caution if some CSVs are source code related.
+
+# Logs
+*.log
+logs/
+
+# IDE and OS specific files
+.DS_Store
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.swp
+*~
+Thumbs.db
+ehthumbs.db
+.cache/
+.project
+.pydevproject
+
+# Machine Learning specific outputs
+# Depending on how models are saved, e.g., if you save checkpoints
+checkpoints/
+
+# Miscellaneous
+# Files that might be created by various tools
+.vscode/
+.spyderproject
+.spyproject
+*.sublime-project
+*.sublime-workspace
+
+# NLTK data (if downloaded to project folder)
+nltk_data/
+
+# Warnings related
+warnings.pyc # Example, if a specific compiled warning file existed
